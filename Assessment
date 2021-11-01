@@ -1,0 +1,120 @@
+#include <iostream>
+#include <exception>
+#include <string>
+using namespace std;
+int main()
+{
+	string name;
+	int age;
+	char city;
+	string ans;
+	cout << " Please Enter Your Full Name " << endl;
+	getline(cin, name);
+	cout << " Please Kindly Enter Your Age In Complete Years" << endl;
+	cin >> age;
+	cout << " Below Are Your Options " << endl;
+	cout << " Abu Dhabi " << endl;
+	cout << " Sharjah " << endl;
+	cout << " Ajman " << endl;
+	cout << " Dubai " << endl;
+	cout << " RAK " << endl;
+	cout << " Umm-Al-Quwain" << endl;
+	cout << " Fujairah " << endl;
+	cout << " Al Ain " << endl;
+	cout << " Other " << endl;
+	cout << " Please Select One Option From Below " << endl;
+	cout << " For Abu Dhabi Enter 'A' " << endl;
+	cout << " For Sharjah Enter 'B' " << endl;
+	cout << " For Ajman Enter 'C' " << endl;
+	cout << " For Dubai Enter 'D' " << endl;
+	cout << " For RAK Enter 'E' " << endl;
+	cout << " For Umm-Al-Quwain Enter 'F' " << endl;
+	cout << " For Fujairah Enter 'G' " << endl;
+	cout << " For Al Ain Enter 'H' " << endl;
+	cout << " For Other Location Enter 'O' " << endl;
+
+
+	cin >> city;
+	switch (city)
+	{
+	case 'a':
+	case 'A':
+	{
+		cout << name << " You Have Selected Abu Dhabi Your Charges Are AED 1000 " << endl;
+		break;
+	}
+	case 'b':
+	case 'B':
+	{
+		cout << name << " You Have Selected Sharjah Your Charges Are AED 500 " << endl;
+		break;
+	}
+	case 'c':
+	case 'C':
+	{
+		cout << name << " You Have Selected Ajman Your Charges Are AED 390 " << endl;
+		break;
+	}
+	case 'd':
+	case 'D':
+	{
+		cout << name << " You Have Selected Dubai Your Charges Are AED 650 " << endl;
+		break;
+	}
+	case 'e':
+	case 'E':
+	{
+		cout << name << " You Have Selected RAK You Charges Are AED 250 " << endl;
+		break;
+	}
+	case 'f':
+	case 'F':
+	{
+		cout << name << " You Have Selected Umm-Al-Quwain Your Charges Are AED 300 " << endl;
+		break;
+	}
+	case'g':
+	case 'G':
+	{
+		cout << name << " You Have Selected Fujairah Your Charges Are AED 300 " << endl;
+		break;
+	}
+	case 'h':
+	case 'H':
+	{
+		cout << name << " You Have Selected Al Ain Your Charges Are AED 1000 " << endl;
+		break;
+	}
+	case 'o':
+	case 'O':
+	{
+		cout << name << " You Have Selected The 'Other' Option , Sorry No Transportation Available " << endl;
+		break;
+	}
+	default:
+	{
+		cout << " Invalid Input " << endl;
+	}
+	}
+	cout << " Do You Want To Avail Your Transportation? " << endl;
+	cin >> ans;
+	if (ans == "y" || ans == "Y")
+	{
+		cout << " Transportation Confirmed " << endl;
+	}
+	else if (ans == "n" || ans == "N")
+	{
+		cout << " Transportation Cancelled " << endl;
+	}
+	else
+	{
+		cout << " Incorrect Command " << endl;
+	}
+
+
+
+	
+
+
+
+}
